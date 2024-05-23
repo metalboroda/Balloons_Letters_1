@@ -36,6 +36,7 @@ namespace Assets.__Game.Resources.Scripts.Management
     {
       SetSavedLevel();
       LoadLevel(_currentLevelIndex);
+      OnLastLevelOfTheList();
     }
 
     public void LoadLevel(int levelIndex)
@@ -78,6 +79,12 @@ namespace Assets.__Game.Resources.Scripts.Management
     {
       _currentLevelIndex = _gameSettings.LevelIndex;
       _overallLevelIndex = _gameSettings.OverallLevelIndex;
+    }
+
+    private void OnLastLevelOfTheList()
+    {
+      if (_currentLevelIndex == _levelPrefabs.Length - 1)
+        EventBus<EventStructs.LastLevelEvent>.Raise(new EventStructs.LastLevelEvent { LastLevel = true });
     }
   }
 }

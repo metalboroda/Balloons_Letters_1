@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ffb88484530eec45a90116f1a7b93f5, type: 3}
   m_Name: CorrectValuesContainer_1
   m_EditorClassIdentifier: 
+  _questText: "\u0417\u043D\u0430\u0439\u0434\u0438 \u0432\u0435\u043B\u0438\u043A\u0443
+    \u043B\u0456\u0442\u0435\u0440\u0443 \u0410, \u0437\u043D\u0430\u0439\u0434\u0438
+    \u0432\u0435\u043B\u0438\u043A\u0443 \u043B\u0456\u0442\u0435\u0440\u0443 \u0411"
   _correctValues:
   - "\u0410"
   - "\u0411"

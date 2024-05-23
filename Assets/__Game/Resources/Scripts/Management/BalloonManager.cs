@@ -48,6 +48,7 @@ namespace Assets.__Game.Resources.Scripts.Management
     {
       EventBus<EventStructs.BalloonReceiveEvent>.Raise(new EventStructs.BalloonReceiveEvent
       {
+        QuestText = _correctNumbersContainerSo.QuestText,
         CorrectValues = _correctNumbersContainerSo.CorrectValues
       });
 

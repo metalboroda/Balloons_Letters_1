@@ -17,6 +17,13 @@ namespace __Game.Resources.Scripts.EventBus
     public struct StuporEvent : IEvent { }
     #endregion
 
+    #region LevelManager
+    public struct LastLevelEvent : IEvent
+    {
+      public bool LastLevel;
+    }
+    #endregion
+
     #region BalloonSpawner
     public struct BalloonSpawnerEvent : IEvent
     {
@@ -30,6 +37,7 @@ namespace __Game.Resources.Scripts.EventBus
     #region BalloonManager
     public struct BalloonReceiveEvent : IEvent
     {
+      public string QuestText;
       public bool CorrectBalloon;
       public string[] CorrectValues;
       public int CorrectBalloonIncrement;
