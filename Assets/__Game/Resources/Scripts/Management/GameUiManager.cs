@@ -324,7 +324,7 @@ namespace Assets.__Game.Resources.Scripts.Management
           SwitchCanvas(_loseCanvas);
 
           if (_lastLevel == true)
-            _winNextLevelBtn.gameObject.SetActive(false);
+            _loseNextLevelBtn.gameObject.SetActive(false);
           break;
         case GamePauseState:
           _globalCanvas.SetActive(true);
